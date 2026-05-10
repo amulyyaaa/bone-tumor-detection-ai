@@ -1,0 +1,8 @@
+[server]
+runOnSave = false
+
+[theme]
+base = "light"
+
+[python]
+version = "3.11"
