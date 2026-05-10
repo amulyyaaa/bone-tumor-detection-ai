@@ -128,7 +128,7 @@ st.markdown("""
 
 # ─── CONSTANTS ──────────────────────────────────────────────────────────────
 IMG_SIZE   = 224
-MODEL_PATH = "model/bone_tumor_model.h5"
+MODEL_PATH = "model/bone_tumor_model.keras"
 CLASS_PATH = "model/class_indices.json"
 
 # ─── LOAD MODEL ─────────────────────────────────────────────────────────────
@@ -214,7 +214,7 @@ class_indices = load_class_indices()
 idx_to_label = {v: k for k, v in class_indices.items()}
 
 if model is None:
-    st.warning("⚠️ Trained model not found at `model/bone_tumor_model.h5`.")
+    st.warning("⚠️ Trained model not found at `model/bone_tumor_model.keras`.")
     st.info("Run `python train.py` first to train the model, then relaunch this app.")
     st.stop()
 
